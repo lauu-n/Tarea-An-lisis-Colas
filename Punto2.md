@@ -1,3 +1,4 @@
+# Encontrar N<sub>s</sub> , T<sub>s</sub> , N<sub>w</sub> , T<sub>w</sub>
 # Modelo M/M/1/K/∞
 
 ## Probabilidades de estado
@@ -133,6 +134,7 @@ $$
 - **Tiempo en cola:**
 
 ![Tw](https://latex.codecogs.com/svg.image?\color{white}T_w=\frac{N_w}{\lambda_{ef}})
+
 
 
 
