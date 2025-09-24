@@ -17,4 +17,5 @@ P<sub>n</sub> = $\ x^n$ P<sub>0</sub> , *n* = 0, 1, ..., *k*
 Normalizar como: 
 $$ \sum_{n=0}^k P<sub>n</sub> $$:
 
-P<sub>0<sub> = $ \sum_{n=0}^k x^n = 1$  → P_0 ${\frac{1 - x^(k+1)}{1-x}}$ = 1
+P<sub>0</sub> = $ \sum_{n=0}^k x^n = 1$  → P_0 ${\frac{1 - x^(k+1)}{1-x}}$ = 1
+
