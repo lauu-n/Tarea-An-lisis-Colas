@@ -1,6 +1,6 @@
 # Comparaciones resultados matemáticos vs resultados computacionales
 
-## Caso A: λ < µ
+## Caso A: λ < µ → Sistema Subutilizado
 
 - Parámetros:
   - λ: 0.5
@@ -42,9 +42,12 @@ Comparación valores teóricos:
 Conclusión:
   - El sistema funciona como un sistema subutilizado pero muestra mayor congestión de la esperada. La probabilidad de bloqueo es mínima (1.59%), pero los tiempos en sistema son más altos que los teóricos, posiblemente por efectos transitorios o variabilidad estadística.
 
+<img width="1029" height="713" alt="Captura de pantalla 2025-09-24 010511" src="https://github.com/user-attachments/assets/5ec3ea19-c8c1-4b0e-9c7c-030caf8ef7eb" />
+
+
 --
 
-## Caso B: λ = µ
+## Caso B: λ = µ → Sistema Balanceado
 
 - Parámetros:
   - λ: 1
@@ -86,11 +89,13 @@ Comparación valores teóricos:
 Conclusión:
   - El sistema opera en condición balanceada (λ = μ) pero muestra congestión extrema, funcionando constantemente al límite de capacidad. La probabilidad de bloqueo coincide exactamente con el valor teórico, validando el modelo para este aspecto. Sin embargo, los tiempos en sistema son excesivamente altos comparado con lo teórico, sugiriendo posibles issues en la implementación de la lógica de servicio o cálculo de tiempos. El sistema está eficientemente utilizado pero con pérdidas significativas por bloqueo.
 
+<img width="1029" height="713" alt="Captura de pantalla 2025-09-24 011856" src="https://github.com/user-attachments/assets/3e769506-5037-47b4-a79c-d0a9b97b5460" />
+
 
 --
 
 
-## Caso C: λ > µ
+## Caso C: λ > µ → Sistema Saturado
 
 - Parámetros:
   - λ: 1.5
@@ -98,39 +103,43 @@ Conclusión:
   - k: 5
 
 Resultados:
-  - Clientes en sistema (Ns): 
-  - Clientes en cola (Nw): 
-  - Tiempo en sistema (Ts):  ticks
-  - Tiempo en cola (Tw):  ticks
-  - Pb teórica: 
-  - λ efectiva: clientes/tick
-  - Clientes completados: 
+  - Clientes en sistema (Ns): 5
+  - Clientes en cola (Nw): 4
+  - Tiempo en sistema (Ts): 43.77 ticks
+  - Tiempo en cola (Tw): 33.68 ticks
+  - Pb teórica: 0.3654 (36.54%)
+  - λ efectiva: 0.9519 clientes/tick
+  - Clientes completados: 451
   - Ticks: 5000
 
 Análisis de congestión: 
-  - Ns = 3, Nw = 2 → El sistema tiene carga moderada
-  - Relación Nw/Ns = 2/3 ≈ 66% → Los clientes pasan más tiempo en servicio que en cola
-  - Pb = 1.59% → Muy baja probabilidad de bloqueo, el sistema rara vez se llena
+  - Ns = 5, Nw = 4 → Sistema permanentemente lleno (Ns = k)
+  - Relación Nw/Ns = 4/5 = 80% → Congestión crítica, cola casi siempre al máximo
+  - Pb = 36.54% → Alta probabilidad de bloqueo, más de 1 de cada 3 clientes es rechazado
 
 Análisis de tiempos:
-  - Ts = 18.31 ticks (tiempo total en sistema)
-  - Tw = 8.7 ticks (tiempo en cola)
-  - Tiempo de servicio = Ts - Tw = 9.61 ticks ≈ 1/μ (teórico: 1.0)
+  - Ts = 43.77 ticks (tiempo total en sistema)
+  - Tw = 33.86 ticks (tiempo en cola)
+  - Tiempo de servicio = Ts - Tw = 9.91 ticks ≈ 1/μ (teórico: 1.0)
+  - Los clientes pasan el 77% de su tiempo en cola
 
 Eficiencia:
-  - Utilización del servidor = 1 - P₀ ≈ λ/μ = 0.5 (50% de uso)
-  - Tasa efectiva λef = 0.4921 ≈ λ (poca pérdida por bloqueo.
-  - Eficiencia = λef/λ = 98.4% → Excelente utilización.
+  - Utilización del servidor = λef/μ = 0.9519 (95.19% de uso)
+  - Tasa efectiva λef = 0.9519 << λ (pérdida del 36.46% por bloqueo)
+  - Eficiencia = λef/λ = 63.46% → Baja eficiencia debido al alto bloqueo
 
 Comparación valores teóricos:
-| Métrica | Teórico  | Simulado | Diferencia            |
-|---------|----------|----------|-----------------------|
-| Pb      | 1.56%    | 1.59%    | +0.03% ✅             |
-| Ns      | ~0.98    | 3.0      | ⚠️ Mayor congestión   |
-| Ts      | ~2.0     | 18.31    | ⚠️ Más alto           |
+| Métrica | Teórico  | Simulado | Diferencia              |
+|---------|----------|----------|-------------------------|
+| Pb      | 36.54%   | 36.54%   | 0.00% ✅               |
+| Ns      | ~3.8     | 5.0      | ⚠️ +1.2 (siempre lleno)|
+| Ts      | ~4.0     | 43.77    | ❌ +39.77              |
 
 Conclusión:
-  - El sistema funciona como un sistema subutilizado pero muestra mayor congestión de la esperada. La probabilidad de bloqueo es mínima (1.59%), pero los tiempos en sistema son más altos que los teóricos, posiblemente por efectos transitorios o variabilidad estadística.
+  - El sistema opera en condición de saturación (λ > μ) funcionando permanentemente al límite de capacidad. La probabilidad de bloqueo coincide exactamente con el valor teórico, confirmando la validez del modelo para cálculos de bloqueo. Sin embargo, se mantiene la anomalía en los tiempos de sistema, que son un orden de magnitud mayor que los valores teóricos esperados. El sistema presenta baja eficiencia global debido al alto porcentaje de clientes rechazados, pero el servidor está altamente utilizado con los clientes que logran entrar al sistema.
+
+<img width="1029" height="713" alt="image" src="https://github.com/user-attachments/assets/da915ce3-4167-46aa-85bf-c3bc8df0abac" />
+
 
 --
 
@@ -320,6 +329,7 @@ to reportar-estadisticas
   output-print (word "λ efectiva: " precision lambda-efectiva 4)
 end
 ```
+
 
 
 
