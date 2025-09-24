@@ -11,11 +11,12 @@ $$
 
 ## Probabilidades en estado estacionario P_n
 
-$$ \sum_{n=0}^k P_n $$
+Ecuaciones de balance:
+P<sub>n</sub> = $\ x^n$ P<sub>0</sub> , *n* = 0, 1, ..., *k*
 
-Entonces la distribución normalizada es:
-\[
-P_n = \frac{x^n}{\sum_{m=0}^k x^m} = \frac{(1 - x) x^n}{1 - x^{k+1}}
-\]
+Normalizar como:
+$$ \sum_{n=0}^k P_n $$ :
+ 
+
 
 
