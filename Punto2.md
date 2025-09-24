@@ -103,57 +103,36 @@ $$
 
 ---
 
-## Resumen de fórmulas (\(x \neq 1\))
+# Resumen de fórmulas (x ≠ 1)
 
-- Probabilidades:
-  
-  $$
-  P_0 = {\frac{1-x}{1-x^{k+1}}}, \quad 
-  P_n = {\frac{(1-x)x^n}{1-x^{k+1}}}
-  $$
-  
-- Bloqueo:
-  
-  $$
-  P_B = {\frac{(1-x)x^k}{1-x^{k+1}}}
-  $$
-  
-- Llegadas efectivas:
-  
-  $$
-  \lambda_{ef} = \lambda (1-P_B)
-  $$
-  
-- Usuarios en el sistema:
-  
-  $$
-  N_s = \frac{x(1 - (k+1)x^k + kx^{k+1})}{(1-x)(1-x^{k+1})}
-  $$
-  
-- Usuarios en cola:
-  
-  $$
-  N_w = N_s - (1-P_0)
-  $$
-  
-- Tiempo en el sistema:
-  
-  $$
-  T_s = \frac{N_s}{\lambda_{ef}}
-  $$
-  
-- Tiempo en cola:
-  
-  $$
-  T_w = T_s - {\frac{1}{\mu}}
-  $$
+- **Probabilidades:**
 
+![P0](https://latex.codecogs.com/svg.image?P_0=\frac{1-x}{1-x^{k+1}})
+![Pn](https://latex.codecogs.com/svg.image?P_n=\frac{(1-x)x^n}{1-x^{k+1}})
 
+- **Bloqueo:**
 
+![PB](https://latex.codecogs.com/svg.image?P_B=\frac{(1-x)x^k}{1-x^{k+1}})
 
+- **Llegadas efectivas:**
 
+![Lambdaef](https://latex.codecogs.com/svg.image?\lambda_{ef}=\lambda(1-P_B))
 
+- **Usuarios en el sistema:**
 
+![Ns](https://latex.codecogs.com/svg.image?N_s=\frac{x(1-(k+1)x^k+kx^{k+1})}{(1-x)(1-x^{k+1})})
+
+- **Usuarios en cola:**
+
+![Nw](https://latex.codecogs.com/svg.image?N_w=N_s-(1-P_0))
+
+- **Tiempo en el sistema:**
+
+![Ts](https://latex.codecogs.com/svg.image?T_s=\frac{N_s}{\lambda_{ef}})
+
+- **Tiempo en cola:**
+
+![Tw](https://latex.codecogs.com/svg.image?T_w=\frac{N_w}{\lambda_{ef}})
 
 
 
