@@ -40,9 +40,10 @@ $$
 \text {P<sub>B</sub>}= {\frac{1}{k+1}}
 $$
 
-## Tasa efectiva de llegadas {{\lambda}<sub>ef</sub>}
+## Tasa efectiva de llegadas \( \lambda_{ef} \)
 
 Llegadas reales al sistema:
+
 
 
 
