@@ -41,9 +41,13 @@ El modelo utiliza **sliders, botones y monintores** para que el usuario pueda co
 5. **Ver Resultados**: Monitorear métricas en tiempo real y usar el botón *Estadísticas* para reporte detallado.
 
 ## Parámetros principales  
-- **slider-1** → controla [explicación del parámetro].  
-- **slider-2** → ajusta [explicación].  
-- **switch-1** → activa/desactiva [explicación].  
+- x < 1: λ < μ → Sistema estable
+- x = 1: λ = μ → Sistema balanceado
+- x > 1: λ > μ → Sistema inestable
+
+- **slider-1** → lambda (λ): Tasa de llegada de clientes al sistema, Frecuencia con la que llegan nuevos clientes, Intensidad de la demanda del servicio
+- **slider-2** → mu (μ): Tasa de servicio del sistema, Velocidad con la que se atiende a los clientes.
+- - **slider-3** → k (Capacidad): Número máximo de clientes permitidos en el sistema, Capacidad total (en servicio + en cola), Límite físico del sistema.
 
 
 ---
