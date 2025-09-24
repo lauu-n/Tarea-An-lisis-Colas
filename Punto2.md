@@ -47,6 +47,7 @@ Llegadas reales al sistema:
 
 $$
 {\lambda}<sub>ef</sub> = {\lambda}(1 - P_B) = {\lambda}(1 - P_k)
+$$
 
 
 
