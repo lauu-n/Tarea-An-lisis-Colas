@@ -1,4 +1,5 @@
-# Proyecto de simulación en NetLogo  
+# Proyecto de simulación en NetLogo
+# Cola: $\ M / M / 1 / K / ∞ $
 
 ## Descripción  
 Este proyecto consiste en el desarrollo de un modelo en **NetLogo** que permite simular el comportamiemto de la cola:
