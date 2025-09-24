@@ -18,7 +18,8 @@ Normalizar como:
 
 $$\sum_{n=0}^k P_n$$
 
-$$\left( \sum_{n=0}^k x^n \right) → \left( \sum_{k=1}^n a_k^2 \right) \left( \sum_{k=1}^n b_k^2 \right)$$
+$$\left(P_0 \sum_{n=0}^k x^n \right) → \left( P_0${\frac{1 - x^(k+1)}{1-x}}$ = 1 \right)$$
+
 
 
 
