@@ -11,14 +11,11 @@ $$
 
 ## Probabilidades en estado estacionario P_n
 
-Sea \( P_n = x^n \), para \( n = 0, 1, ..., k \).
-Para normalizar, calculamos:
-\[
-\sum_{n=0}^k P_n = \sum_{n=0}^k x^n = \frac{1 - x^{k+1}}{1 - x}, \quad \text{con } x \ne 1
-\]
+$$ \sum_{n=0}^k P_n $$
 
 Entonces la distribución normalizada es:
 \[
 P_n = \frac{x^n}{\sum_{m=0}^k x^m} = \frac{(1 - x) x^n}{1 - x^{k+1}}
 \]
+
 
