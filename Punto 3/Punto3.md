@@ -16,7 +16,7 @@ Simulación de un sistema de colas con capacidad limitada (modelo M/M/1/k) para 
 | μ (mu)     | Tasa de servicio                      | 0.5 - 3.0       |
 | k          | Capacidad máxima del sistema          | 1 - 10          |
 
-## 📊 Métricas Calculadas
+## Métricas Calculadas
 
 ### Métricas Principales
 - **Ns**: Número de clientes en el sistema
@@ -56,7 +56,7 @@ $$
 1. **Abrir el Modelo**: Descargar el archivo `.nlogo` y abrir con NetLogo.
 2. **Configurar Parámetros**: Ajustar los sliders: lambda, mu, k
     - Valores recomendados para inicio:
-      - λ = 0.8
+      - λ = 0.5
       - μ = 1.0
       - k = 5
 3. **Inicializar el Sistema**: Hacer clic en el botón *setup*.
@@ -111,3 +111,4 @@ Comparar valores simulados con teóricos:
 - Tiempos entre llegadas exponenciales
 - Tiempos de servicio exponenciales
 - Capacidad máxima: k clientes
+
