@@ -31,18 +31,19 @@ $$\left(P<sub>n</sub> = {\frac{1}{k+1}}\right) , \left(n = 0, ..., k \right)$$
 ## Probabilidad de bloqueo P_B
 
 $$
-\text {P<sub>B</sub> = P<sub>k</sub>}= {\frac{(1-x)x^k}{1-x^(k+1)}(x ≠ 1)}
+\text {P_B = P_k}= {\frac{(1-x)x^k}{1-x^(k+1)}(x ≠ 1)}
 $$
 
 y si x = 1: 
 
 $$
-\text {P<sub>B</sub>}= {\frac{1}{k+1}}
+\text {P_B}= {\frac{1}{k+1}}
 $$
 
 ## Tasa efectiva de llegadas
 
 Llegadas reales al sistema:
+
 
 
 
