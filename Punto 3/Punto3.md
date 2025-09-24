@@ -1,7 +1,48 @@
 # Comparaciones resultados matemáticos vs resultados computacionales
 
+## Caso A: λ < µ
+
+- Parámetros:
+  - λ: 0.5
+  - µ: 1
+  - k: 5
+
+Resultados:
+  - Clientes en sistema (Ns): 3
+  - Clientes en cola (Nw): 2
+  - Tiempo en sistema (Ts): 18.31 ticks
+  - Tiempo en cola (Tw): 8.7 ticks
+  - Pb teórica: 0.0159 (1.59%)
+  - λ efectiva: 0.4921 clientes/tick
+  - Clientes completados: 250
+  - Ticks: 5000
+
+Análisis de congestión: 
+  - Ns = 3, Nw = 2 → El sistema tiene carga moderada
+  - Relación Nw/Ns = 2/3 ≈ 66% → Los clientes pasan más tiempo en servicio que en cola
+  - Pb = 1.59% → Muy baja probabilidad de bloqueo, el sistema rara vez se llena
+
+Análisis de tiempos:
+  - Ts = 18.31 ticks (tiempo total en sistema)
+  - Tw = 8.7 ticks (tiempo en cola)
+  - Tiempo de servicio = Ts - Tw = 9.61 ticks ≈ 1/μ (teórico: 1.0)
+
+Eficiencia:
+  - Utilización del servidor = 1 - P₀ ≈ λ/μ = 0.5 (50% de uso)
+  - Tasa efectiva λef = 0.4921 ≈ λ (poca pérdida por bloqueo.
+  - Eficiencia = λef/λ = 98.4% → Excelente utilización.
+
+Comparación valores teóricos:
+| Métrica | Teórico | Simulado | Diferencia |
+| Pb | 1.56% | 1.59% | +0.03% |
+
+## Caso B: λ = µ
+
+## Caso C: λ > µ
+
 ## Código en NetLogo
-'' bash
+
+```
 globals [
   total-clientes
   tiempo-total-sistema
@@ -183,9 +224,8 @@ to reportar-estadisticas
   output-print (word "Pb teórica: " precision Pb-teorica 4)
   output-print (word "λ efectiva: " precision lambda-efectiva 4)
 end
-''
+```
 
 
-## Caso A: λ < µ
 
 
