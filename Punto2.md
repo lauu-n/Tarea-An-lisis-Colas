@@ -107,32 +107,33 @@ $$
 
 - **Probabilidades:**
 
-![P0](https://latex.codecogs.com/svg.image?P_0=\frac{1-x}{1-x^{k+1}})
-![Pn](https://latex.codecogs.com/svg.image?P_n=\frac{(1-x)x^n}{1-x^{k+1}})
+![P0](https://latex.codecogs.com/svg.image?\color{white}P_0=\frac{1-x}{1-x^{k+1}})
+![Pn](https://latex.codecogs.com/svg.image?\color{white}P_n=\frac{(1-x)x^n}{1-x^{k+1}})
 
 - **Bloqueo:**
 
-![PB](https://latex.codecogs.com/svg.image?P_B=\frac{(1-x)x^k}{1-x^{k+1}})
+![PB](https://latex.codecogs.com/svg.image?\color{white}P_B=\frac{(1-x)x^k}{1-x^{k+1}})
 
 - **Llegadas efectivas:**
 
-![Lambdaef](https://latex.codecogs.com/svg.image?\lambda_{ef}=\lambda(1-P_B))
+![Lambdaef](https://latex.codecogs.com/svg.image?\color{white}\lambda_{ef}=\lambda(1-P_B))
 
 - **Usuarios en el sistema:**
 
-![Ns](https://latex.codecogs.com/svg.image?N_s=\frac{x(1-(k+1)x^k+kx^{k+1})}{(1-x)(1-x^{k+1})})
+![Ns](https://latex.codecogs.com/svg.image?\color{white}N_s=\frac{x(1-(k+1)x^k+kx^{k+1})}{(1-x)(1-x^{k+1})})
 
 - **Usuarios en cola:**
 
-![Nw](https://latex.codecogs.com/svg.image?N_w=N_s-(1-P_0))
+![Nw](https://latex.codecogs.com/svg.image?\color{white}N_w=N_s-(1-P_0))
 
 - **Tiempo en el sistema:**
 
-![Ts](https://latex.codecogs.com/svg.image?T_s=\frac{N_s}{\lambda_{ef}})
+![Ts](https://latex.codecogs.com/svg.image?\color{white}T_s=\frac{N_s}{\lambda_{ef}})
 
 - **Tiempo en cola:**
 
-![Tw](https://latex.codecogs.com/svg.image?T_w=\frac{N_w}{\lambda_{ef}})
+![Tw](https://latex.codecogs.com/svg.image?\color{white}T_w=\frac{N_w}{\lambda_{ef}})
+
 
 
 
