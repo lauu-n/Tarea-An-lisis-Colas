@@ -1,13 +1,12 @@
-# Encontrar $\ N~s~ , T~s~ , T~w~ , N~w~$
+# Encontrar N<sub>s</sub> , T<sub>s</sub> , N<sub>w</sub> , T<sub>w</sub>
 
-- H~2~SO~4~: Número de usuarios en el sistema
-- $\ T~s~$: Tiempo en el sistema
-- $\ N~w~$: Número de usuarios en cola
-- $\ T~w~$: Tiempo en la cola
+- N<sub>s</sub>: Número de usuarios en el sistema
+- T<sub>s</sub>: Tiempo en el sistema
+- N<sub>w</sub>: Número de usuarios en cola
+- T<sub>w</sub>: Tiempo en la cola
 
 $$
 \text {Probabilidad n clientes en sistema}: {\text{x}} = \frac{\lambda}{\mu} {P~n~}
 $$
 
 Pn = $\ x^n$
-
