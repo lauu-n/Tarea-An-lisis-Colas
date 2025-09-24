@@ -15,9 +15,12 @@ Ecuaciones de balance:
 P<sub>n</sub> = $\ x^n$ P<sub>0</sub> , *n* = 0, 1, ..., *k*
 
 Normalizar como:
-$$ \sum_{n=0}^k P_n $$
+$$ 
+\sum_{n=0}^k P_n 
+$$
 :
  
+
 
 
 
