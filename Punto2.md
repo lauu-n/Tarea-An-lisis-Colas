@@ -89,7 +89,7 @@ $$
 
 ---
 
-## Tiempo esperado en cola \(Tw\)
+## Tiempo esperado en cola T<sub>w</sub>
 
 $$
 T_w = T_s - \frac{1}{\mu}
@@ -133,6 +133,7 @@ $$
 - **Tiempo en cola:**
 
 ![Tw](https://latex.codecogs.com/svg.image?\color{white}T_w=\frac{N_w}{\lambda_{ef}})
+
 
 
 
