@@ -18,15 +18,23 @@ Normalizar como:
 
 $$\sum_{n=0}^k P_n$$
 
-$$\left(P_0 \sum_{n=0}^k x^n \right) → \left( P_0${\frac{1 - x^(k+1)}{1-x}}$ = 1 \right)$$
+$$\left(P_0 \sum_{n=0}^k x^n \right) → \left( P_0 {\frac{1 - x^(k+1)}{1-x}} = 1 (x ≠ 1) \right)$$
 
+Por tanto para x ≠ 1:
 
+$$\left(P_0 = {\frac{1 - x}{1-x^(k+1}}\right) , \left( P_n {\frac{(1-x)x^n}{1-x^(k+1)}} , n = 0, ..., k \right)$$
 
+Caso x = 1
 
+$$\left(P_n = {\frac{1}{k+1}}\right) , \left(n = 0, ..., k \right)$$
 
+## Probabilidad de bloqueo P_B
 
+$$
+\text {P_B = P_k}= {\frac{(1-x)x^k}{1-x^(k+1)}(x ≠ 1)}
+$$
 
-
+y si x = 1: $\text {P_B}= {\frac{1}{k+1}}$
 
 
 
