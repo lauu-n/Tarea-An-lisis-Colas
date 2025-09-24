@@ -14,12 +14,12 @@ $$
 Ecuaciones de balance:
 P<sub>n</sub> = $\ x^n$ P<sub>0</sub> , *n* = 0, 1, ..., *k*
 
-Normalizar como:
-$$ 
-\sum_{n=0}^k P_n 
-$$
-:
- 
+Normalizar como: 
+$$ \sum_{n=0}^k P_n $$
+
+P<sub>0</sub> = $ \sum_{n=0}^k x^n = 1$  → P<sub>0</sub> ${\frac{1 - x^(k+1)}{1-x}}$ = 1
+
+
 
 
 
