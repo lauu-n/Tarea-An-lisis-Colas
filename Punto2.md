@@ -17,7 +17,7 @@ $$
 
 ---
 
-## Probabilidad de bloqueo \(PB\)
+## Probabilidad de bloqueo P<sub>B</sub>
 
 $$
 P_B = P_k = {\frac{(1-x)x^k}{1 - x^{k+1}}}, \quad (x ≠ 1)
@@ -41,7 +41,7 @@ $$
 
 ---
 
-## Número esperado en el sistema \(Ns\)
+## Número esperado en el sistema N<sub>s</sub>
 
 Para \(x ≠ 1\):
 
@@ -57,7 +57,7 @@ $$
 
 ---
 
-## Número esperado en la cola \(Nw\)
+## Número esperado en la cola N<sub>w</sub>
 
 Definición:
 
@@ -73,7 +73,7 @@ $$
 
 ---
 
-## Tiempo esperado en el sistema \(Ts\)
+## Tiempo esperado en el sistema T<sub>s</sub>
 
 Aplicando la Ley de Little con la tasa efectiva:
 
@@ -133,6 +133,7 @@ $$
 - **Tiempo en cola:**
 
 ![Tw](https://latex.codecogs.com/svg.image?\color{white}T_w=\frac{N_w}{\lambda_{ef}})
+
 
 
 
