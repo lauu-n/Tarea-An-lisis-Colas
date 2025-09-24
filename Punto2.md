@@ -1,5 +1,4 @@
 # Encontrar N<sub>s</sub> , T<sub>s</sub> , N<sub>w</sub> , T<sub>w</sub>
-# Modelo M/M/1/K/∞
 
 ## Probabilidades de estado
 
@@ -18,7 +17,7 @@ $$
 
 ---
 
-## Probabilidad de bloqueo \(P_B\)
+## Probabilidad de bloqueo \(PB\)
 
 $$
 P_B = P_k = {\frac{(1-x)x^k}{1 - x^{k+1}}}, \quad (x ≠ 1)
@@ -42,7 +41,7 @@ $$
 
 ---
 
-## Número esperado en el sistema \(N_s\)
+## Número esperado en el sistema \(Ns\)
 
 Para \(x ≠ 1\):
 
@@ -58,7 +57,7 @@ $$
 
 ---
 
-## Número esperado en la cola \(N_w\)
+## Número esperado en la cola \(Nw\)
 
 Definición:
 
@@ -74,7 +73,7 @@ $$
 
 ---
 
-## Tiempo esperado en el sistema \(T_s\)
+## Tiempo esperado en el sistema \(Ts\)
 
 Aplicando la Ley de Little con la tasa efectiva:
 
@@ -90,7 +89,7 @@ $$
 
 ---
 
-## Tiempo esperado en cola \(T_w\)
+## Tiempo esperado en cola \(Tw\)
 
 $$
 T_w = T_s - \frac{1}{\mu}
@@ -134,6 +133,7 @@ $$
 - **Tiempo en cola:**
 
 ![Tw](https://latex.codecogs.com/svg.image?\color{white}T_w=\frac{N_w}{\lambda_{ef}})
+
 
 
 
