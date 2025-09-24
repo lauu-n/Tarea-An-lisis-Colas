@@ -18,7 +18,7 @@ Normalizar como:
 
 $$\sum_{n=0}^k P_n$$
 
-\( P_0 = \sum_{n=0}^k x^n = 1 \Rightarrow P_0 \cdot \frac{1 - x^{k+1}}{1 - x} = 1 \)
+$$\left( \sum_{k=1}^n a_k b_k \right)^2 \leq \left( \sum_{k=1}^n a_k^2 \right) \left( \sum_{k=1}^n b_k^2 \right)$$
 
 
 
