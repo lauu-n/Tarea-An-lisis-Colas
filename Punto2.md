@@ -9,6 +9,11 @@ $$
 \text {Probabilidad n clientes en sistema}: {\text{x}} = \frac{\lambda}{\mu} · P<sub>n</sub>
 $$
 
-P<sub>n</sub> = $\ x^n$ , *n* = 0, 1, ... *k*
+## Probabilidades en estado estacionario P_n
 
-$$ \sum_{n=0}^k P_n $$
+Ecuaciones de balance:
+P_n = $\ x^n$ P_0 , *n* = 0, 1, ..., *k*
+
+Normalizar como: $$ \sum_{n=0}^k P_n $$:
+
+P_0 = $ \sum_{n=0}^k x^n = 1$  → P_0 ${\frac{1 - x^(k+1)}{1-x}}$ = 1
