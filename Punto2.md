@@ -18,11 +18,9 @@ Normalizar como:
 
 $$\sum_{n=0}^k P_n$$
 
-P<sub>0</sub> = 
+\( P_0 = \sum_{n=0}^k x^n = 1 \Rightarrow P_0 \cdot \frac{1 - x^{k+1}}{1 - x} = 1 \)
 
-$$\sum_{n=0}^k x^n = 1$$ 
 
-→ P<sub>0</sub> ${\frac{1 - x^(k+1)}{1-x}}$ = 1
 
 
 
