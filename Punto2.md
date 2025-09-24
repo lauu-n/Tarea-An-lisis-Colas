@@ -11,5 +11,4 @@ $$
 
 P<sub>n</sub> = $\ x^n$ , *n* = 0, 1, ... *k*
 
-$$\left \sum_{n=0}^k P_n \right $$
-
+$$ \sum_{n=0}^k P_n $$
