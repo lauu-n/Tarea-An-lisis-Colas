@@ -47,7 +47,7 @@ El modelo utiliza **sliders, botones y monintores** para que el usuario pueda co
 
 - **slider-1** → lambda (λ): Tasa de llegada de clientes al sistema, Frecuencia con la que llegan nuevos clientes, Intensidad de la demanda del servicio
 - **slider-2** → mu (μ): Tasa de servicio del sistema, Velocidad con la que se atiende a los clientes.
-- - **slider-3** → k (Capacidad): Número máximo de clientes permitidos en el sistema, Capacidad total (en servicio + en cola), Límite físico del sistema.
+- **slider-3** → k (Capacidad): Número máximo de clientes permitidos en el sistema, Capacidad total (en servicio + en cola), Límite físico del sistema.
 
 
 ---
