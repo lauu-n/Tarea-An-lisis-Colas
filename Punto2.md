@@ -3,7 +3,7 @@
 
 ## Probabilidades de estado
 
-Por tanto, para \(x \neq 1\):
+Por tanto, para \(x ≠ 1\):
 
 $$
 P_0 = {\frac{1 - x}{1 - x^{k+1}}}, \qquad 
@@ -21,7 +21,7 @@ $$
 ## Probabilidad de bloqueo \(P_B\)
 
 $$
-P_B = P_k = {\frac{(1-x)x^k}{1 - x^{k+1}}}, \quad (x \neq 1)
+P_B = P_k = {\frac{(1-x)x^k}{1 - x^{k+1}}}, \quad (x ≠ 1)
 $$
 
 y si \(x = 1\):
@@ -44,7 +44,7 @@ $$
 
 ## Número esperado en el sistema \(N_s\)
 
-Para \(x \neq 1\):
+Para \(x ≠ 1\):
 
 $$
 N_s = {\frac{x \big(1 - (k+1)x^k + kx^{k+1}\big)}{(1-x)(1 - x^{k+1})}}
@@ -134,6 +134,7 @@ $$
 - **Tiempo en cola:**
 
 ![Tw](https://latex.codecogs.com/svg.image?\color{white}T_w=\frac{N_w}{\lambda_{ef}})
+
 
 
 
