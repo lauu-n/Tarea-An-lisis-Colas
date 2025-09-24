@@ -34,7 +34,17 @@ $$
 \text {P<sub>B</sub> = P<sub>k</sub>}= {\frac{(1-x)x^k}{1-x^(k+1)}(x ≠ 1)}
 $$
 
-y si x = 1: $\text {P<sub>B</sub>}= {\frac{1}{k+1}}$
+y si x = 1: 
+
+$$
+\text {P<sub>B</sub>}= {\frac{1}{k+1}}
+$$
+
+## Tasa efectiva de llegadas {{\lambda}<sub>ef</sub>}
+
+Llegadas reales al sistema:
+
+
 
 
 
