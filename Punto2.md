@@ -6,7 +6,7 @@
 - T<sub>w</sub>: Tiempo en la cola
 
 $$
-\text {Probabilidad n clientes en sistema}: {\text{x}} = \frac{\lambda}{\mu} • {\text{P <sub>n</sub>}}
+\text {Probabilidad n clientes en sistema}: {\text{x}} = \frac{\lambda}{\mu} · P<sub>n</sub>
 $$
 
 P<sub>n</sub> = $\ x^n$
