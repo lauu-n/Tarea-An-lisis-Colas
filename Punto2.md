@@ -1,12 +1,12 @@
 # Encontrar N~s~ , T~s~ , T~w~ , N~w~
 
-- N~s~: Número de usuarios en el sistema
-- T~s~: Tiempo en el sistema
-- N~w~: Número de usuarios en cola
-- T~w~: Tiempo en la cola
+- Ns: Número de usuarios en el sistema
+- Ts: Tiempo en el sistema
+- Nw: Número de usuarios en cola
+- Tw: Tiempo en la cola
 
 $$
-\text {Probabilidad n clientes en sistema}: {\text{x}} \frac{$\lambda$}{$\mu$} {P~n~}
+\text {Probabilidad n clientes en sistema}: {\text{x}} \frac{\lambda}{\mu} {P~n~}
 $$
 
-P~n~ = x^n
+Pn = $\x^n$
